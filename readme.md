@@ -45,6 +45,7 @@ new RestrictedInput({
   pattern: creditCardGapsPattern(gaps, lengths)
 });
 ```
+> [Demo](https://scrum.github.io/credit-card-gaps-pattern/)
 
 ## Related
 
