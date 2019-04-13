@@ -15,7 +15,7 @@ Masks on hot for [HTMLInputElement](https://developer.mozilla.org/ru/docs/Web/AP
 $ npm install credit-card-gaps-pattern 
 ```
 
-> **Note:** This project is compatible with node v6+
+> **Note:** This project is compatible with node v8+
 
 ## Usage
 
@@ -45,6 +45,7 @@ new RestrictedInput({
   pattern: creditCardGapsPattern(gaps, lengths)
 });
 ```
+> [Demo](https://scrum.github.io/credit-card-gaps-pattern/)
 
 ## Related
 
