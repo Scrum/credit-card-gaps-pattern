@@ -1,4 +1,4 @@
-var creditCardGaspPattern = (function () {
+var creditCardGapsPattern = (function () {
   'use strict';
 
   function _toConsumableArray(arr) {
@@ -34,6 +34,7 @@ var creditCardGaspPattern = (function () {
       LENGTHS_NOT_EMPTY: 'A lengths option must not be empty'
     }
   };
+
   var index = (function (gaps, lengths) {
     var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'DIGIT';
 
