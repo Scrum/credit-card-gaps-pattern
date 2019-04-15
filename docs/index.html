@@ -108,10 +108,12 @@
     formattedCreditCardInput.setPattern(creditCardGapsPattern(data.unionpay.gaps, data.unionpay.lengths));
 
     function setUnionpay() {
+      element.value = data.unionpay.value;
       formattedCreditCardInput.setPattern(creditCardGapsPattern(data.unionpay.gaps, data.unionpay.lengths));
     }
 
     function setAmex() {
+      element.value = data.amex.value;
       formattedCreditCardInput.setPattern(creditCardGapsPattern(data.amex.gaps, data.amex.lengths));
     }
   </script>
