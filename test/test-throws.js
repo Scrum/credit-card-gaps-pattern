@@ -1,5 +1,6 @@
 import test from 'ava';
-import creditCardGapsPattern, {constants} from '../src';
+import constants from '../src/constants';
+import creditCardGapsPattern from '../src';
 
 test('gaps option must be provided', t => {
   const {message} = t.throws(creditCardGapsPattern);

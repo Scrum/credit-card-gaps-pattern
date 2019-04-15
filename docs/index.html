@@ -84,7 +84,7 @@
 
 
   <script src="restricted-input.js"></script>
-  <script src="../lib/credit-card-gaps-pattern.js"></script>
+  <script src="credit-card-gaps-pattern.js"></script>
   <script>
     const element = document.querySelector('input');
     const data = {
@@ -108,10 +108,12 @@
     formattedCreditCardInput.setPattern(creditCardGapsPattern(data.unionpay.gaps, data.unionpay.lengths));
 
     function setUnionpay() {
+      element.value = data.unionpay.value;
       formattedCreditCardInput.setPattern(creditCardGapsPattern(data.unionpay.gaps, data.unionpay.lengths));
     }
 
     function setAmex() {
+      element.value = data.amex.value;
       formattedCreditCardInput.setPattern(creditCardGapsPattern(data.amex.gaps, data.amex.lengths));
     }
   </script>
