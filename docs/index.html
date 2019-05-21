@@ -99,22 +99,23 @@
         lengths: [15]
       }
     }
-
+    const pattern = creditCardGapsPattern(data.unionpay.gaps, data.unionpay.lengths);
     const formattedCreditCardInput = new RestrictedInput({
       element,
-      pattern: creditCardGapsPattern(data.unionpay.gaps, data.unionpay.lengths)
+      pattern: pattern
     });
-
-    formattedCreditCardInput.setPattern(creditCardGapsPattern(data.unionpay.gaps, data.unionpay.lengths));
 
     function setUnionpay() {
       element.value = data.unionpay.value;
-      formattedCreditCardInput.setPattern(creditCardGapsPattern(data.unionpay.gaps, data.unionpay.lengths));
+      const pattern = creditCardGapsPattern(data.unionpay.gaps, data.unionpay.lengths);
+      formattedCreditCardInput.setPattern(pattern);
     }
 
     function setAmex() {
       element.value = data.amex.value;
-      formattedCreditCardInput.setPattern(creditCardGapsPattern(data.amex.gaps, data.amex.lengths));
+      const pattern = creditCardGapsPattern(data.amex.gaps, data.amex.lengths);
+      formattedCreditCardInput.setPattern(pattern);
+
     }
   </script>
 </body>
